@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset = "UTF-8">
+        <title>flower</title>
+        
+    </head>    
+        
+    <script>
+        function Button_click(){
+               var h,t,u//hundred(百位數),tens(十位數),units(個位數) 
+               
+               var flower;
+               var num;
+               
+              for(i=100;i<1000;i++){ 
+               u = parseInt(i%10); 
+               t = parseInt(i/10%10); 
+               h = parseInt(i/100%10); 
+               num = h*h*h+t*t*t+u*u*u;
+               if(num==i){
+                   flower = i ; 
+              
+                document.writeln(flower);   
+               } 
+              
+               
+                
+           }
+          
+        }
+            
+    
+    </script>
+    <body>
+        
+    <button onclick="Button_click()">輸出</button>
+    
+    
+        
+        
+    </body>
+    
+</html>
